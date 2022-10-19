@@ -7,17 +7,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddflightComponent } from './addflight/addflight.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewflightComponent } from './viewflight/viewflight.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AddflightComponent
+  },
+  {
+    path:"view",component:ViewflightComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddflightComponent
+    AddflightComponent,
+    ViewflightComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { AddflightComponent } from './addflight/addflight.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewflightComponent } from './viewflight/viewflight.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes:Routes=[
   {
@@ -27,7 +28,9 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

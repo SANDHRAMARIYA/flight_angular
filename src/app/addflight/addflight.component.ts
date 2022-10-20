@@ -12,7 +12,7 @@ export class AddflightComponent implements OnInit {
 
   flightname=""
   origin=""
-  destination=""
+  designation=""
  capacity=""
   status:boolean=false
 
@@ -20,7 +20,7 @@ export class AddflightComponent implements OnInit {
     let data={
     "flightname":this.flightname,
     "origin":this.origin,
-    "destination":this.destination,
+    "designation":this.designation,
  "capacity":this.capacity
 
     }
@@ -31,7 +31,7 @@ export class AddflightComponent implements OnInit {
         alert("successfully added")
         this.flightname=""
         this.origin=""
-        this.destination=""
+        this.designation=""
         this.capacity=""
         this.status=true
       }

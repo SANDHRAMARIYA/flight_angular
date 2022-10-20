@@ -21,7 +21,17 @@ fetchData=()=>{
   )
 }
 
-
+deleteflight=(id:any)=>{
+  let data={
+    "id":id
+  }
+  this.myapi.deleteflight(data).subscribe(
+    (response)=>{
+      alert("DELETED")
+    }
+  )
+  this.fetchData()
+}
 
 
   viewData:any=[]
